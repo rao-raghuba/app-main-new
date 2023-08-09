@@ -18,7 +18,7 @@ public class CustomerController {
             new Customer(4L, "dunny","duncan","dunny@javawhizz.com")
     );
 
-    @GetMapping
+    @GetMapping("/list")
     public List<Customer> findAllCustomers(){
         return CUSTOMERS;
     }
