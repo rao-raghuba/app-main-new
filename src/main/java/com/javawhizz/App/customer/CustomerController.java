@@ -25,6 +25,7 @@ public class CustomerController {
     @PostMapping("/changeevent") 
     public String logEvent(@RequestBody String jsonStr) 	
     {
+    	System.out.println("payload=" + jsonStr);
 		return jsonStr;
     }
 }
